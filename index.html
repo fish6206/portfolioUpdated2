@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Link to Semantic UI -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <!-- Link to Semantic UI Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <style>
+        .ui.form {
+        	margin-left: 5%;
+            margin-right: 5%;          
+        }
+        #about-me {
+        	padding-top: 5%;
+            padding-bottom: 5%;
+        	margin-left: 5%;
+            margin-right: 5%;
+        }
+        
+     </style>
+
+</head>
+
+<body>
+    <!--Sidebar Navbar-->
+    <div class="ui top attached demo menu">
+        <a id="sidebarBtn" class="item hide-port">
+            <i class="sidebar icon"></i>
+            Menu
+        </a>
+    </div>
+    <div class="ui sidebar inverted vertical menu">
+        <a id="hide-port-bar" class="item">
+            <i class="user outline icon"></i>
+            About Me
+        </a>
+        <a class="item show-port">
+            <i class="images outline icon"></i>
+            Portfolio
+        </a>
+        <a href="assets/Resume.docx" class="item">
+            <i class="file alternate icon"></i>
+            Download Resume
+        </a>
+        <a href="https://www.linkedin.com/in/greg-fish-3b4943a2/" target="_blank" class="item">
+            <i class="linkedin in icon"></i>
+            LinkedIn
+        </a>
+        <a href="https://github.com/fish6206" target="_blank" class="item">
+            <i class="github icon"></i>
+            GitHub
+        </a>
+    </div>
+    <div class="pusher">
+        <!-- SITE CONTENT !!!!!!!!!!!!!!!!!--->
+        <!--site content goes in pusher div for nav bar to slide-->
+
+        <!--About Me Section-->
+        <div id="about-me" class="ui items">
+            <div class="item">
+                <div class="image">
+                    <img src="https://media.licdn.com/dms/image/C4E03AQFGEoEqw-2NIg/profile-displayphoto-shrink_200_200/0?e=1550102400&v=beta&t=wvR_yaiZOlSGDNDDdCkEg0lgAW9BOg6HCQGsplPdh5c">
+                </div>
+                <div class="content">
+                    <a class="header">Greg Fish</a>
+                    <div class="meta">
+                        <span>About Me</span>
+                    </div>
+                    <div class="description">
+                        <p></p>
+                    </div>
+                    <div class="extra">
+                        Hi. I’m Greg, a web developer from San Diego, CA. I have always been a creative person. Whether
+                        the medium is music, art, or writing I have always spent my free time mastering my craft and
+                        trying to make something great. Recently I have decided to harness that creative drive, leave
+                        the world of finance, and pursue a career in UI/UX design. I am currently enrolled in The
+                        Coding Bootcamp at UC San Diego and have been steadily building my portfolio. I will be
+                        graduating from the program in February, 2018 but would love to start my new career sooner than
+                        later. Please take a look around!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--container for view portfolio button-->
+        <div id="title-button" class="ui centered header show-port">
+            <button class="huge ui green centered button">View Portfolio</button>
+        </div>
+
+
+        <!--div for 1st row of portfolio cards-->
+        <div id="div1" style="display:none;">
+            <div class="ui special cards centered relaxed grid">
+                <div class="card">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button sharepac-desc-btn">Learn More</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="http://zsyst.com/wp-content/uploads/2016/08/garage-full-of-stuff1.jpg">
+                    </div>
+                    <div class="content">
+                        <a class="header sharepac-desc-btn">SharePac App</a>
+                        <div class="meta">
+                            <span class="date">Created in Dec 2018</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a href="https://github.com/jthonen/Rentry" target="_blank">
+                            <i class="github icon"></i>
+                            GitHub Page
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="blurring dimmable image">
+                        <div class="ui inverted dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <!--view description button-->
+                                    <div class="ui inverted button barfinder-desc-btn">Learn More</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://res.cloudinary.com/sagacity/image/upload/c_crop,h_1492,w_2100,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/hou_1116_dive_bars_kay_s_lounge_g788hv.jpg">
+                    </div>
+                    <div class="content">
+                        <a class="header barfinder-desc-btn">Bar Finder</a>
+                        <div class="meta">
+                            <span class="date">Created in Oct 2018</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a href="https://github.com/brysonelson/project-gpgp" target="_blank">
+                            <i class="github icon"></i>
+                            GitHub Page
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <!--div for 2nd row of portfolio cards-->
+        <div id="div2" style="display:none;">
+            <div class="ui special cards centered relaxed grid">
+                <div class="card">
+                    <div class="blurring dimmable image">
+                        <div class="ui inverted dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <!--view description button-->
+                                    <div class="ui inverted button friendfinder-desc-btn">Learn More</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://f4.bcbits.com/img/0009268250_10.jpg">
+                    </div>
+                    <div class="content">
+                        <a class="header friendfinder-desc-btn">Friend Finder</a>
+                        <div class="meta">
+                            <span class="date">Created in Nov 2018</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a href="https://github.com/fish6206/friendFinder" target="_blank">
+                            <i class="github icon"></i>
+                            GitHub Page
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="blurring dimmable image">
+                        <div class="ui inverted dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <!--view description button-->
+                                    <div class="ui inverted button arnold-desc-btn">Learn More</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://m.media-amazon.com/images/M/MV5BZTYxY2QxODAtZDE1ZS00ZWY5LTgzYTUtZTFlYzM0Zjc3NmI3XkEyXkFqcGdeQXVyMjM0ODM0NDk@._V1_SY1000_CR0,0,1262,1000_AL_.jpg">
+                    </div>
+                    <div class="content">
+                        <a class="header arnold-desc-btn">Arnold Trivia</a>
+                        <div class="meta">
+                            <span class="date">Created in Sep 2018</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a href="https://github.com/fish6206/TriviaGame" target="_blank">
+                            <i class="github icon"></i>
+                            GitHub Page
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <!--div for hide-port button-->
+        <div class="ui centered header">
+            <button id="hide-port" class="ui huge green button" style="display:none">Hide Portfolio</button>
+        </div>
+
+        <!--Modal for SharePac description-->
+        <div class="ui modal popup-sharepac">
+            <i class="close icon"></i>
+            <div class="header product-name">
+                SharePac App
+            </div>
+            <div class="image content">
+                <!--product-img div-->
+                <div class="ui medium image">
+                    <img src="http://zsyst.com/wp-content/uploads/2016/08/garage-full-of-stuff1.jpg" alt="SharePac image">
+                </div>
+                <div class="description">
+                    <div class="ui header">Description</div>
+                    <!--Description div-->
+                    <ul class="description">
+                        <li>jQuery</li>
+                        <li>JavaScript</li>
+                        <li>Express.js</li>
+                        <li>mySQL</li>
+                        <li>node.js</li>
+                        <li>Bootstrap</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>CSS Grids</li>
+                        <li>Semantic UI</li>
+                    </ul>
+                </div>
+            </div>
+            <!--GitHub and App Buttons-->
+            <div class="actions">
+                <a href="https://github.com/jthonen/Rentry" target="_blank">
+                    <div class="ui grey button">
+                        <i class="github icon"></i>
+                        GitHub Page
+                    </div>
+                </a>
+                <a href="https://sharepac-app.herokuapp.com/" target="_blank">
+                    <div class="ui green button">
+                        View App
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--Modal for Bar Finder-->
+        <div class="ui modal popup-barfinder">
+            <i class="close icon"></i>
+            <div class="header product-name">
+                Bar Finder App
+            </div>
+            <div class="image content">
+                <!--product-img div-->
+                <div class="ui medium image">
+                    <img src="https://res.cloudinary.com/sagacity/image/upload/c_crop,h_1492,w_2100,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/hou_1116_dive_bars_kay_s_lounge_g788hv.jpg"
+                        alt="Bar Finder image">
+                </div>
+                <div class="description">
+                    <div class="ui header">Technologies Used</div>
+                    <!--Description div-->
+                    <ul class="description">
+                        <li>AJAX/APIs</li>
+                        <li>Firebase</li>
+                        <li>jQuery</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>Semantic UI</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+            </div>
+            <!--GitHub and App Buttons-->
+            <div class="actions">
+                <a href="https://github.com/brysonelson/project-gpgp" target="_blank">
+                    <div class="ui grey button">
+                        <i class="github icon"></i>
+                        GitHub Page
+                    </div>
+                </a>
+                <a href="https://brysonelson.github.io/project-gpgp/" target="_blank">
+                    <div class="ui green button">
+                        View App
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!--Modal for Friend Finder-->
+        <div class="ui modal popup-friendfinder">
+            <i class="close icon"></i>
+            <div class="header product-name">
+                Friend Finder App
+            </div>
+            <div class="image content">
+                <!--product-img div-->
+                <div class="ui medium image">
+                    <img src="https://res.cloudinary.com/sagacity/image/upload/c_crop,h_1492,w_2100,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/hou_1116_dive_bars_kay_s_lounge_g788hv.jpg"
+                        alt="Bar Finder image">
+                </div>
+                <div class="description">
+                    <div class="ui header">Technologies Used</div>
+                    <!--Description div-->
+                    <ul class="description">
+                        <li>jQuery</li>
+                        <li>JavaScript</li>
+                        <li>Express.js</li>
+                        <li>node.js</li>
+                        <li>Bootstrap</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+            </div>
+            <!--GitHub and App Buttons-->
+            <div class="actions">
+                <a href="https://github.com/fish6206/friendFinder/blob/master/package.json" target="_blank">
+                    <div class="ui grey button">
+                        <i class="github icon"></i>
+                        GitHub Page
+                    </div>
+                </a>
+                <a href="https://gentle-earth-24908.herokuapp.com/" target="_blank">
+                    <div class="ui green button">
+                        View App
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--Modal for Arnold Trivia-->
+        <div class="ui modal popup-arnold">
+            <i class="close icon"></i>
+            <div class="header product-name">
+                Arnold Trivia
+            </div>
+            <div class="image content">
+                <!--product-img div-->
+                <div class="ui medium image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZTYxY2QxODAtZDE1ZS00ZWY5LTgzYTUtZTFlYzM0Zjc3NmI3XkEyXkFqcGdeQXVyMjM0ODM0NDk@._V1_SY1000_CR0,0,1262,1000_AL_.jpg"
+                        alt="Arnold Trivia image">
+                </div>
+                <div class="description">
+                    <div class="ui header">Technologies Used</div>
+                    <!--Description div-->
+                    <ul class="description">
+                        <li>jQuery</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+            </div>
+            <!--GitHub and App Buttons-->
+            <div class="actions">
+                <a href="https://github.com/fish6206/TriviaGame" target="_blank">
+                    <div class="ui grey button">
+                        <i class="github icon"></i>
+                        GitHub Page
+                    </div>
+                </a>
+                <a href="https://fish6206.github.io/TriviaGame/" target="_blank">
+                    <div class="ui green button">
+                        View App
+                    </div>
+                </a>
+            </div>
+        </div>
+            
+
+        <!--Contact Form-->
+        <div id="contact-form" class="ui form">
+            <h3 class="ui top attached centered header">How Can I Help You?</h3>
+            <br>
+            <div class="fields">
+                <div class="four wide field">
+                    <label>First name</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="four wide field">
+                    <label>Last name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div class="eight wide field">
+                    <label>Email</label>
+                    <input type="text" placeholder="Email">
+                </div>
+            </div>
+            <div class="field">
+                <label>Message</label>
+                <textarea></textarea>
+            </div>
+            <div class="ui bottom attached header">
+                <button id="contact-sub-btn" class="ui inverted green large button">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!--link to java page-->
+    <script src="assets/portfolio.js"></script>
+
+</body>
+
+</html>

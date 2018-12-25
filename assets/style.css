@@ -1,39 +1,56 @@
      /*About me section CSS */
-     .center-icon {
-        margin: auto;
-        width: 6%;
-     }
-   #about-img {
-     border-radius: 50%;
-     margin-top: 5%;
-     margin-bottom: 5%;
-     box-shadow: 2px 6px 10px 0px #dadee5;
-     -webkit-filter: grayscale(40%);filter: grayscale(40%);
+   .center-icon {
+      margin: auto;
+      width: 8%;
    }
-   #about-text-sect {
-     background-color: grey;
-     margin-top: 5%;
-     margin-bottom: 5%;
-   }
-   #about-textbox {
-     background-color: #292a2d;
-     color: white;
-     box-shadow: 0 4px 8px 0 #dadee5;
-   }
-   #about-text {
-     margin-right: 5%;
-     margin-left: 5%;
-     top: 5%;
-   }
-   #help-div {
-     background-color: #8FB5C1;
-     margin-top: 5%;
-     padding: 2%;
-   }
-   #help-txt {
-     color: white;
- text-shadow: 2px 2px 4px #000000;
-   }
+  #about-img {
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 2px 6px 10px 0px #dadee5;
+    -webkit-filter: grayscale(40%);filter: grayscale(40%);
+  }
+  #my-name {
+    text-shadow: 2px 2px 4px grey;
+    font-size: 42px;
+  }
+  #my-title {
+    text-shadow: 2px 2px 4px grey;
+  }
+  #about-text-sect {
+    background-color: #8FB5C1;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #about-textbox {
+    background-color: #292a2d;
+    color: white;
+    box-shadow: 0 4px 8px 0 #dadee5;
+    border: 6px solid #F2F7F9;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+  }
+  #about-text {
+    margin: 5% 5% 5% 5%;
+    top: 5%;
+    font-size: 22px;
+  }
+  #email-text {
+    color: white;
+  }
+  #email-text:hover {
+    color: #8FB5C1;
+  }
+  #help-div {
+    background-color: #8FB5C1;
+    margin-top: 5%;
+    padding: 2%;
+  }
+  #help-txt {
+    color: white;
+text-shadow: 2px 2px 4px #000000;
+  }
    
    /*CSS for Form */
     #my-img {
@@ -42,7 +59,7 @@
       floar: left;
     }
     
-        #contact-form {
+#contact-form {
    background-color:#F2F7F9;
    width:465px;
    padding:20px;

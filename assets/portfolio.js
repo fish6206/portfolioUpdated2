@@ -22,7 +22,15 @@ $("#hide-port").on("click", function () {
     $("#div1").slideUp(2000);
     $("#div2").slideUp(1000);
     $("#hide-port").fadeOut();
-    $("#title-button").empty().html("<button>View Portfolio</button>");
+    $("#title-button").empty();
+    $("#title-button").append(`
+        <div class="ui animated fade huge green button" tabindex="0">
+            <div class="visible content">View Portfolio!</div>
+                <div class="hidden content">
+                    <i class="thumbs up outline icon"></i>
+            </div>
+        </div>
+        `);  
     $("#about-me").slideDown(3500);
     $("#comp-img").fadeIn(4000);
     $("#help-div").fadeIn(4000);

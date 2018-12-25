@@ -8,7 +8,7 @@ $('#sidebarBtn')
 
 //show portfolio button
 $(".show-port").on("click", function () {
-    $("#title-button").empty().html("<h1>Portfolio</h1>").addClass("ui huge centered header");
+    $("#title-button").empty().html("<h1>Portfolio</h1>").addClass("portfolio-title text-align:center;");
     $("#div1").fadeIn(1000);
     $("#div2").fadeIn(2000);
     $("#hide-port").fadeIn(3000);
@@ -41,7 +41,15 @@ $("#hide-port-bar").on("click", function () {
     $("#div1").slideUp(2000);
     $("#div2").slideUp(1000);
     $("#hide-port").fadeOut();
-    $("#title-button").empty().html("<button>View Portfolio</button>");
+    $("#title-button").empty();
+    $("#title-button").append(`
+        <div class="ui animated fade huge green button" tabindex="0">
+            <div class="visible content">View Portfolio!</div>
+                <div class="hidden content">
+                    <i class="thumbs up outline icon"></i>
+            </div>
+        </div>
+        `); 
     $("#comp-img").fadeIn(4000);
     $("#help-div").fadeIn(4000);
     $("#about-me").slideDown(3500);

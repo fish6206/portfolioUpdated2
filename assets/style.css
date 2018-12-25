@@ -3,6 +3,7 @@
       margin: auto;
       width: 8%;
    }
+
   #about-img {
     border-radius: 50%;
     margin-top: 5%;
@@ -11,6 +12,10 @@
     -webkit-filter: grayscale(40%);filter: grayscale(40%);
   }
   #my-name {
+    text-shadow: 2px 2px 4px grey;
+    font-size: 42px;
+  }
+  .portfolio-title {
     text-shadow: 2px 2px 4px grey;
     font-size: 42px;
   }

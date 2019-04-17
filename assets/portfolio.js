@@ -11,6 +11,7 @@ $(".show-port").on("click", function () {
     $("#title-button").empty().html("<h1>Portfolio</h1>").addClass("portfolio-title text-align:center;");
     $("#div1").fadeIn(1000);
     $("#div2").fadeIn(2000);
+    $("#div3").fadeIn(2000);
     $("#hide-port").fadeIn(3000);
     $("#about-me").slideUp(800);
     $("#comp-img").fadeOut(2000);
@@ -20,7 +21,8 @@ $(".show-port").on("click", function () {
 //hide portfolio button
 $("#hide-port").on("click", function () {
     $("#div1").slideUp(2000);
-    $("#div2").slideUp(1000);
+    $("#div2").slideUp(1500);
+    $("#div3").slideUp(1000);
     $("#hide-port").fadeOut();
     $("#title-button").empty();
     $("#title-button").append(`
@@ -39,7 +41,8 @@ $("#hide-port").on("click", function () {
 //about me sidebar
 $("#hide-port-bar").on("click", function () {
     $("#div1").slideUp(2000);
-    $("#div2").slideUp(1000);
+    $("#div2").slideUp(1500);
+    $("#div3").slideUp(1000);
     $("#hide-port").fadeOut();
     $("#title-button").empty();
     $("#title-button").append(`
@@ -81,6 +84,20 @@ $('.popup-friendfinder')
     .modal('show')
     ;
 });
+
+//Archer Clicky Semantic activate popup (learn more btn) 
+$(".archer-desc-btn").on("click", function () {
+    $('.popup-archer')
+        .modal('show')
+        ;
+    });
+
+//Eat the Burger Semantic activate popup (learn more btn) 
+$(".burger-desc-btn").on("click", function () {
+    $('.popup-burger')
+        .modal('show')
+        ;
+    });
 
 //Arnold Trivia Semantic activate popup (learn more btn) 
 $(".arnold-desc-btn").on("click", function () {

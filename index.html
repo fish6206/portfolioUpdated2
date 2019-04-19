@@ -527,7 +527,6 @@
             </div>
         </div>
 
-
         <!--computer img -->
         <img id="comp-img" class="ui centered image" src="http://coderoo.com.au/blog/wp-content/uploads/2018/02/web.jpg"
             alt="computer image">
@@ -535,6 +534,7 @@
         <div id="help-div">
             <h1 style="text-align:center;" id="help-txt">How Can I Help You?</h1>
         </div>
+
         <!--Contact form-->
         <div id="contact-form" class="ui form">
             <h1>Get In Touch!</h1>
@@ -557,16 +557,19 @@
 
                 <label for="enquiry">Enquiry: </label>
                 <select id="enquiry" name="enquiry">
-                    <option value="general">General</option>
-                    <option value="sales">Project</option>
-                    <option value="support">Job Opportunity</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Project">Project</option>
+                    <option value="Job Opportunity">Job Opportunity</option>
                 </select>
                 <label for="message">Message: <span class="required">*</span></label>
                 <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters"
                     required="required" data-minlength="20"></textarea>
 
                 <span id="loading"></span>
-                <input type="submit" value="Submit" id="submit-button" />
+                 <a id="submit-button"  href="" target="_top">
+                    Submit
+                    <!--<input type="submit" value="Submit" id="submit-button">-->
+                </a>
                 <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
             </form>
         </div>

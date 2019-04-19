@@ -105,3 +105,28 @@ $('.popup-arnold')
     .modal('show')
     ;
 });
+
+//contact form
+$("#submit-button").on("click", function () {
+//$(document).ready(function() {
+    //Save references to elements. Don't do DOM walks in event handlers when not needed.
+    var $sendEmailEl = $('#submit-button');
+    var $subjectEl = $('#enquiry');
+    var $name = $('#name');
+    var $email = $('#email');
+    var $telephone = $('#telephone');
+    var $bodyEl = $('#message');
+    function updateEmailLink() {
+    // %0d = line break %20 = space between words inside email
+        $sendEmailEl.attr('href', 'mailto:fish.greg4@gmail.com?' +
+            'subject=' + encodeURIComponent($subjectEl.val()) +
+            '&body=' + 'Name: ' + encodeURIComponent($name.val()) + '%0d%0d' +
+            'Email: ' + encodeURIComponent($email.val()) + '%0d%0d' +
+            'Telephone: ' + encodeURIComponent($telephone.val()) + '%0d%0d' +
+            'Message: ' + '%0d' + encodeURIComponent($bodyEl.val())
+            );
+        console.log($sendEmailEl.attr('href'));
+    }
+    $('#subject,#body').on('input', updateEmailLink);
+    updateEmailLink();
+});

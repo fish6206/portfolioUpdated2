@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Greg's Portfolio</title>
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Link to Semantic UI -->
@@ -14,7 +15,6 @@
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!--Link to css page-->
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-
 </head>
 
 <body>
@@ -70,19 +70,10 @@
                     <div class="row" id="about-text-sect">
                         <div class="three wide column"></div>
                         <div class="ten wide column" id="about-textbox">
-                            <p id="about-text">Hi. I’m Greg, a web developer from San Diego, CA. I have always been a
-                                creative person. Whether
-                                the medium is music, art, or writing I have always spent my free time mastering my craft
-                                and
-                                trying to make something great. Recently I have decided to harness that creative drive,
-                                leave
-                                the world of finance, and pursue a career in UI/UX design. I am currently enrolled in
-                                The
-                                Coding Bootcamp at UC San Diego and have been steadily building my portfolio. I will be
-                                graduating from the program in February, 2018 but would love to start my new career
-                                sooner
-                                than
-                                later. Please take a look around!</p>
+                            <p id="about-text">I love the moment when you realize your once basic idea has come to life as a fully functional web application.  
+                                I’ve always had the imagination and drive, but lacked a few of the skills to create a full stack application on my own.  
+                                This is why I enrolled in UCSD’s Coding Bootcamp to round out my skills as a Full Stack Web Developer.  
+                                Being a lifelong learner is very important to me and I love that there is something new to learn every day in this career. Please take a look around!</p>
                             <p style="text-align:right;">Greg Fish | 858-336-6839 | <a id="email-text"
                                     href="mailto:fish.greg4@gmail.com?Subject=Developer%20Request"
                                     target="_top">fish.greg4@gmail.com</a></p>
@@ -543,7 +534,7 @@
                 <li id="info">There were some problems with your form submission:</li>
             </ul>
             <p id="success">Thanks for your message! We will get back to you ASAP!</p>
-            <form method="post" action="process.php">
+            <form method="post" action="">
                 <label for="name">Name: <span class="required">*</span></label>
                 <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required"
                     autofocus="autofocus" />
@@ -566,10 +557,9 @@
                     required="required" data-minlength="20"></textarea>
 
                 <span id="loading"></span>
-                 <a id="submit-button"  href="" target="_top">
-                    Submit
+                    <button><a id="submit-button"  href="" target="_top">Submit</a></button>
                     <!--<input type="submit" value="Submit" id="submit-button">-->
-                </a>
+    
                 <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
             </form>
         </div>
